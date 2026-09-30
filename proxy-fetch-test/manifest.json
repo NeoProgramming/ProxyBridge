@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Proxy Fetch Test",
+  "version": "1.0",
+  "description": "Проверка: идёт ли fetch() через прокси в разных контекстах",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://proxmint.com/*"],
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Proxy Fetch Test"
+  }
+}
